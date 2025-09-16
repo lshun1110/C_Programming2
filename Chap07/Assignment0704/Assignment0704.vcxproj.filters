@@ -15,25 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="copy_arr.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="cmp_arr1.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="cmp_arr2.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="struct_arr.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="select_sort.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="drill_exercise1~3.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="drill_exercise_4.c">
+    <ClCompile Include="main_4.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

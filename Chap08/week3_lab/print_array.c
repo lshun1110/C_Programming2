@@ -3,10 +3,15 @@
 void print_array_double(double arr[], int sz);
 void printArrayDouble(double* arr, int sz);
 int test_print_array();
+int test_function_pointer();
+double add(double a, double b);
+double sub(double a, double b);
+double mul(double a, double b);
 
 int main()
 {
-	test_print_array();
+	//test_print_array();
+	test_function_pointer();
 	return 0;
 }
 
@@ -46,4 +51,48 @@ void printArrayDouble(double * arr, int sz)
 	}
 	printf("\n");
 	return;
+}
+
+/*
+	함수 이름 = 함수 시작 주소 (약간 변수 느낌)
+*/
+
+int test_function_pointer()
+{
+	double (*pfunc)(double a, double b) = NULL;
+	// 포인터의 유동적이고 가변적인 부분을 가장 잘 들어내는 코드
+	pfunc = add;
+
+	double result = (*pfunc)(3.0,4.0);
+
+	printf("%lf", result);
+
+
+	// 일반적으로 제너릭처럼 함수포인터또한 'void' 형태가 가능한가? 
+	// 만약 된다면 이것도 형식 미정이기에 메모리 블럭 단위로 바꿔야하는가?
+	// 파이썬처럼 함수를 일급 객체 처리 한다면 
+}
+
+//정수 덧셈 결과 반환
+//입력 : 두 실수
+//출력 : 더한 값
+double add(double a, double b)
+{
+	return a + b;
+}
+
+//정수 뺄셈 결과 반환
+//입력 : 두 실수
+//출력 : 뺀 값
+double sub(double a, double b)
+{
+	return a + b;
+}
+
+//정수 곱셈 결과 반환
+//입력 : 두 실수
+//출력 : 곱한 값
+double mul(double a, double b)
+{
+	return a + b;
 }

@@ -1,5 +1,5 @@
 /*
-	예제 7-12 : 2차원 배열의 초기화
+	예제 7-13 : 2차원 배열의 초기화
 */
 
 #define _CRT_SECURE_NO_WARNINGS

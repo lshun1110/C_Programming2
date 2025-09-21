@@ -1,0 +1,24 @@
+/*
+	예제 8-2 : 포인터의 선언 및 초기화
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    // int *p1 = 0x12345678;     // 컴파일 에러
+    int* p2 = (int*)0x12345678;  // 실행 에러가 발생한다.
+
+    int a = 10;
+    int* p3 = &a;   // a의 주소를 구해서 p3를 초기화한다.
+
+    int* p4 = 0;    // 어떤 주소로 초기화할지 알 수 없으면 0으로 초기화한다.
+    int* p5 = NULL; // 0 대신 NULL을 사용할 수 있다.
+
+    printf("p2 = %p\n", p2);
+    printf("p3 = %p\n", p3);
+    printf("p4 = %p\n", p4);
+    printf("p5 = %p\n", p5);
+    // %p 주소 출력 형식 문자열
+    return 0;
+}
